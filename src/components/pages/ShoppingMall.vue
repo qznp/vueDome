@@ -81,6 +81,7 @@ import { swiper, swiperSlide } from "vue-awesome-swiper";
 // import swiperDefault from "../swiper/swiperDefault";
 import floorComponent from "../component/floorComponent.vue";
 import { toMoney } from "@/filter/moneyFilter.js";
+import url from "@/serviceAPI.config.js";
 import goodsInfo from "../component/goodsInfoComponent";
 export default {
   components: {
@@ -115,7 +116,7 @@ export default {
   },
   created() {
     axios({
-      url: " https://www.easy-mock.com/mock/5c25930ad1696002aa62e667/one/one",
+      url: url.getShoppingMallInfo,
       method: "get"
     })
       .then(response => {
