@@ -6,10 +6,14 @@ import App from "./App";
 // 引入路由
 import router from "./router/index.js";
 
-import { Button, Row, Col } from "vant";
+import { Button, Row, Col, Swipe, SwipeItem, Lazyload, List } from "vant";
 Vue.use(Button)
   .use(Row)
-  .use(Col);
+  .use(Col)
+  .use(Swipe)
+  .use(SwipeItem)
+  .use(Lazyload)
+  .use(List);
 
 Vue.config.productionTip = false;
 
